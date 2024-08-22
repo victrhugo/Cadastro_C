@@ -4,7 +4,7 @@
 #define MAX_LEN 50
 
 
-void cadastrar(char login, charsenha) {
+void cadastrar(char *login, char *senha) {
     printf("Digite o login: ");
     fgets(login, MAX_LEN, stdin);
     login[strcspn(login, "\n")] = 0;
@@ -15,7 +15,7 @@ void cadastrar(char login, charsenha) {
 }
 
 
-int autenticar(const char login, const charsenha) {
+int autenticar(const char *login, const char *senha) {
     char loginInput[MAX_LEN];
     char senhaInput[MAX_LEN];
 
